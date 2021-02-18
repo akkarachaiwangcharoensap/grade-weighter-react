@@ -1,0 +1,35 @@
+.custom-container {
+	padding: 1rem;
+	border: 1px solid #ececec;
+}
+
+.custom-caret {
+
+	transition: all 0.2s;
+
+	&.active {
+		transform: rotate(90deg);
+	}
+}
+
+.item-panel {
+	.fields {
+		transition: all 0.2s;
+		max-height: 100rem;
+	}
+}
+
+// https://weblog.west-wind.com/posts/2014/feb/22/using-css-transitions-to-slideup-and-slidedown
+.slideUp, .slideDown {
+    max-height: 0 !important;            
+    overflow-y: hidden;
+
+    // -webkit-transition: max-height ease-in-out;
+    // -moz-transition: max-height ease-in-out;
+    // -o-transition: max-height ease-in-out;
+    // transition: max-height ease-in-out;
+}
+
+.slideDown {            
+    max-height: 60px ;                    
+} 
